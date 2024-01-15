@@ -5,7 +5,7 @@ import { parseCookies } from 'nookies';
 export function canSSRGuest<P>(fn: GetServerSideProps<P>){
     return async (ctx: GetServerSidePropsContext): Promise<GetServerSidePropsResult<P>>=> {
 
-        const cookies = parseCookies(ctx);
+        const cookies = parseCookies(ctx);        
 
         // Se o usuário tentar acessar a pagina tendo já um login redirecionamos
         if (cookies['@nextauth.token']){
@@ -16,8 +16,6 @@ export function canSSRGuest<P>(fn: GetServerSideProps<P>){
                 }
             }
         }
-
-
 
         return await fn(ctx);
     }

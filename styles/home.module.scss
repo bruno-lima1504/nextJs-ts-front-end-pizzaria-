@@ -5,7 +5,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--gray-900);
+    background-color: var(--white);
 }
 
 .login{
@@ -18,7 +18,7 @@
     padding: 2rem 1.5rem;
 
     h1{
-        color: var(--white);
+        color: var(--green-strong);
         padding-bottom: 1rem;
     }
     
@@ -41,7 +41,7 @@
 
 .text{
     margin-top: 1rem;
-    color: var(--white);
+    color: var(--green-strong);
     cursor: pointer;
 }
 
