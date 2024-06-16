@@ -1,14 +1,13 @@
-
-.containerCenter{
+.containerCenter {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: var(--white);
+    background-color: var(--gray-900);
 }
 
-.login{
+.login {
     margin-top: 2rem;
     width: 600px;
     display: flex;
@@ -17,37 +16,33 @@
     flex-direction: column;
     padding: 2rem 1.5rem;
 
-    h1{
-        color: var(--green-strong);
+    h1 {
+        color: var(--white);
         padding-bottom: 1rem;
     }
-    
-    form{
+
+    form {
         width: 90%;
         display: flex;
-        flex-direction: column;        
+        flex-direction: column;
     }
 
-    form button{
+    form button {
         height: 40px;
         font-size: 1.2rem;
     }
 
 }
 
-.logo{
-    max-width: 80%;
-}
-
-.text{
+.text {
     margin-top: 1rem;
-    color: var(--green-strong);
+    color: var(--white);
     cursor: pointer;
 }
 
-@media (max-width: 620px){
-    .login{
+
+@media (max-width: 620px) {
+    .login {
         width: 90%;
-        margin-top: 0.5rem;
     }
 }
